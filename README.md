@@ -34,6 +34,27 @@ or to use without doing either.
 The aim of Lite XL compared to lite is to be more user friendly,
 improve the quality of font rendering, and reduce CPU usage.
 
+## Prerequisite
+
+Note that the nightly version is required to be able to use `zig cc` with Meson.
+
+- [Zig](https://ziglang.org/download/)
+
+## Build
+
+Same steps from [the official documentation](https://lite-xl.github.io/en/build)
+can be used but the following commands need to be issued before running `build-packages.sh`:
+
+For bash users:
+```console
+export CC="zig cc $@"
+```
+
+Fish:
+```console
+export CC="zig cc $argv"
+```
+
 ## Customization
 
 Additional functionality can be added through plugins which are available in
